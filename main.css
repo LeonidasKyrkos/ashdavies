@@ -22,7 +22,7 @@ body {
   top: 0;
   position: fixed;
   z-index: 1;
-  background-color: grey;
+  background-color: #e5e5e5;
   overflow: scroll;
   transition: 0.5s;
   display: flex;
@@ -41,6 +41,8 @@ body {
   flex-flow: column nowrap;
   margin: 0 auto;
   list-style: none; }
+  .nav_wrapper a {
+    color: black; }
 
 .nav_item {
   margin: 60px 0;
@@ -61,11 +63,14 @@ body {
   height: 200px;
   width: 200px;
   margin: 20px;
-  background-color: red;
-  align-items: center; }
+  background-color: #e5e5e5;
+  align-items: center;
+  border: solid 4px black; }
   .grid_item h2 {
     font-size: 30px;
     text-align: center;
     padding: 80px 0; }
+    .grid_item h2 a {
+      color: black; }
 
 /*# sourceMappingURL=main.css.map */

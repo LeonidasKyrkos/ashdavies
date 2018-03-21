@@ -1,3 +1,5 @@
 full-page nav
 weather changer (background effect)
 randomise grid order
+add an inline svg
+
