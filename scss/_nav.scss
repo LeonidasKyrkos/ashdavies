@@ -1,5 +1,31 @@
-.header {
-    text-align: center;
+
+
+.pancake {
+    @include center-it;
+
+    &_lines {
+        display: block;
+        @include pancake-line;
+
+        &::before {
+            @include pseudo-element;
+            @include pancake-line;
+            top: -80px;
+        }
+        
+        &::after {
+            @include pseudo-element;    
+            @include pancake-line;
+            top: 80px;
+        }
+    }
+
+    &-open {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        height: 80px;
+    }
 }
 
 .nav {
@@ -9,55 +35,27 @@
     top: 0;
     position: fixed;
     z-index: 1;
-    background-color: #e5e5e5;
+    background-color: $primary__bg-color;
     overflow: scroll;
     transition: 0.5s;
     display: flex;
     align-items: center;
     transform: translate(-100%);
-}
 
-.pancake_wrapper {
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    height: 80px;
-}
+    &_wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 auto;
+        list-style: none;
+    }
+    
+    &_item {
+        margin: 60px 0;
+        font-size: 80px;
+        font-weight: bold;
+    }
 
-.pancake_lines {
-    display: block;
-    height: 10px;
-    width: 50px;
-    background-color: red;
-}
-
-.pancake_lines::before {
-    @extend .pancake_lines;
-    content: "";
-    position: absolute;
-    top: -15px;
-}
-
-.pancake_lines::after {
-    @extend .pancake_lines;
-    content: "";
-    position: absolute;
-    top: 15px;
-}
-
-.nav_wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 0 auto;
-    list-style: none;
-
-        a {
-            color: black;
-        }
-}
-
-.nav_item {
-    margin: 60px 0;
-    font-size: 80px;
-    font-weight: bold;
+    &_link {
+        color: $primary__text-color;
+    }
 }

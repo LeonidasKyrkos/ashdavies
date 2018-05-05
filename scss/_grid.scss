@@ -1,19 +1,11 @@
-@mixin border-style($width: 2px, $style: solid, $color: $primary__font-color) {
-    border: {
-        width: $width;
-        style: $style;
-        color: $color;
-    }
-}
-
-@mixin grid {
+.grid {
     width: 80%;
     margin: 0 auto;
 
     &_title {
         text-align: center;
         font-size: 40px;
-        color: $primary__font-color;
+        color: $primary__text-color;
         margin: 40px 0;
     }
 
@@ -42,14 +34,7 @@
     }
     
     &_link {
-        color: $primary__font-color;
+        color: $primary__text-color;
     }
 
-
-
-
-}
-
-.grid {
-    @include grid
 }

@@ -1,5 +1,25 @@
-@mixin pseudo($display: block, $position: absolute, $content: ''){
+@mixin pseudo-element($display: block, $position: absolute, $content: ''){
     content: $content;
     display: $display;
     position: $position;
+}
+
+@mixin pancake-line {
+    height: 40px;
+    width: 200px;
+    background-color: red;
+}
+
+@mixin border-style($width: 2px, $style: solid, $color: $primary__text-color) {
+    border: {
+        width: $width;
+        style: $style;
+        color: $color;
+    }
+}
+
+@mixin center-it {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
