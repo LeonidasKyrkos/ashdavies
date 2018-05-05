@@ -1,0 +1,12 @@
+$primary__font-color: #333333;
+$primary__bg-color: #e5e5e5;
+
+@import "_mixins.scss";
+@import "_grid.scss";
+@import "_nav.scss";
+
+body {
+    font-family: 'Oxygen', 'sans serif';
+}
+
+
