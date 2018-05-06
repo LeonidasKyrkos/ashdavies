@@ -10,13 +10,13 @@
         &::before {
             @include pseudo-element;
             @include pancake-line;
-            top: -80px;
+            top: -20px;
         }
         
         &::after {
             @include pseudo-element;    
             @include pancake-line;
-            top: 80px;
+            top: 20px;
         }
     }
 

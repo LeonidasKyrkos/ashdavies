@@ -1,3 +1,6 @@
+body {
+  font-family: 'Oxygen', 'sans serif'; }
+
 .grid {
   width: 80%;
   margin: 0 auto; }
@@ -30,28 +33,29 @@
 .pancake {
   position: absolute;
   top: 50%;
-  left: 50%; }
+  left: 50%;
+  transform: translate(-50%, -50%); }
   .pancake_lines {
     display: block;
-    height: 40px;
-    width: 200px;
+    height: 20px;
+    width: 100px;
     background-color: red; }
     .pancake_lines::before {
       content: "";
       display: block;
-      position: absolute;
-      height: 40px;
-      width: 200px;
+      position: relative;
+      height: 20px;
+      width: 100px;
       background-color: red;
-      top: -80px; }
+      top: -20px; }
     .pancake_lines::after {
       content: "";
       display: block;
-      position: absolute;
-      height: 40px;
-      width: 200px;
+      position: relative;
+      height: 20px;
+      width: 100px;
       background-color: red;
-      top: 80px; }
+      top: 20px; }
   .pancake-open {
     position: absolute;
     right: 40px;
@@ -82,8 +86,5 @@
     font-weight: bold; }
   .nav_link {
     color: #333333; }
-
-body {
-  font-family: 'Oxygen', 'sans serif'; }
 
 /*# sourceMappingURL=main.css.map */
