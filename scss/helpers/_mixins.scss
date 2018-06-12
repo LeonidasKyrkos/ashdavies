@@ -1,0 +1,8 @@
+@mixin border-style($width: 2px, $style: solid, $color: $primary__text-color) {
+    border: {
+        width: $width;
+        style: $style;
+        color: $color;
+    }
+}
+

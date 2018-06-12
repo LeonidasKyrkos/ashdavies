@@ -6,33 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/main.js"></script>
     <title>Practice Site</title>
 </head>
 
 <body>
 
+    <header class="header">
+        <h1 class="header__title">
+            Here's a header
+        </h1>
+        <h2 class="header__subtitle">
+            Here's a subtitle
+        </h2>
+    </header>
+
+    <section class="intro">
+        <a href="#" onclick="showIntroOne()">
+            <div class="intro__button">
+                <h3 class="intro__heading">
+                    About me
+                </h3>
+            </div>
+        </a>
+        <a href="#" onclick="showIntroTwo()">
+            <div class="intro__button">
+                <h3 class="intro__heading">
+                    A second thing
+                </h3>
+            </div>
+        </a>
+        <a href="#" onclick="showIntroThree()">
+            <div class="intro__button">
+                <h3 class="intro__heading">
+                    A third thing
+                </h3>
+            </div>
+        </a>
+        <span class="intro__hr"></span>
+        <div class="intro__copy-area">
+            <p class="intro__copy-first">
+                Content of the first button
+            </p>
+            <p class="intro__copy-second">
+                Content of the second button
+            </p>
+            <p class="intro__copy-third">
+                Content of the third button
+            </p>
+        </div>
+
+    </section>
+
     <section class="grid">
 
-        <h1 class="grid_title">Things I thought were cool</h1>
+        <h1 class="grid__title">Things I thought were cool</h1>
 
-        <h2 class="grid_subtitle">These are little bits of functionality I wanted to try out but didn't want to make an entire project around</h2>
+        <h2 class="grid__subtitle">These are little bits of functionality I wanted to try out but didn't want to make an entire project around</h2>
 
-        <ul class="grid_items">
+        <ul class="grid__items">
 
-            <li class="grid_item">
-                <h2 class="grid_text">
-                    <a class="grid_link" href="#" onclick="openNav()">Full Page Nav</a>
+            <li class="grid__item">
+                <h2 class="grid__text">
+                    <a class="grid__link" href="#" onclick="openNav()">Full Page Nav</a>
                 </h2>
             </li>
 
-            <li class="grid_item"></li>
+            <li class="grid__item"></li>
 
-            <li class="grid_item"></li>
+            <li class="grid__item"></li>
 
-            <li class="grid_item"></li>
+            <li class="grid__item"></li>
 
         </ul>
 
@@ -43,22 +89,22 @@
 
         <a href="#" onclick="closeNav()">
             <div class="pancake-open">
-                <div class="pancake_lines"></div>
+                <div class="pancake__lines"></div>
             </div>
         </a>
 
-        <ul class="nav_wrapper">
+        <ul class="nav__wrapper">
 
-            <li class="nav_item">
-                <a class="nav_link" href="#" onclick="closeNav()">Close Me!</a>
+            <li class="nav__item">
+                <a class="nav__link" href="#" onclick="closeNav()">Close Me!</a>
             </li>
 
-            <li class="nav_item">
-                <a class="nav_link" href="#" onclick="closeNav()">Close Me!</a>
+            <li class="nav__item">
+                <a class="nav__link" href="#" onclick="closeNav()">Close Me!</a>
             </li>
 
-            <li class="nav_item">
-                <a class="nav_link" href="#" onclick="closeNav()">Close Me!</a>
+            <li class="nav__item">
+                <a class="nav__link" href="#" onclick="closeNav()">Close Me!</a>
 
         </ul>
 

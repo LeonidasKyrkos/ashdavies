@@ -4,21 +4,21 @@ body {
 .grid {
   width: 80%;
   margin: 0 auto; }
-  .grid_title {
+  .grid__title {
     text-align: center;
     font-size: 40px;
     color: #333;
     margin: 40px 0; }
-  .grid_subtitle {
+  .grid__subtitle {
     text-align: center;
     font-size: 20px;
     color: #333;
     margin: 40px 0; }
-  .grid_items {
+  .grid__items {
     display: flex;
     flex-flow: row wrap;
     justify-content: center; }
-  .grid_item {
+  .grid__item {
     height: 200px;
     width: 200px;
     margin: 0 20px 20px;
@@ -27,44 +27,24 @@ body {
     border-width: 2px;
     border-style: solid;
     border-color: #333; }
-  .grid_text {
+  .grid__text {
     font-size: 30px;
     text-align: center;
     padding: 80px 0; }
-  .grid_link {
+  .grid__link {
     color: #333; }
 
-.pancake {
+.pancake__lines {
+  display: block; }
+  .pancake__lines::before {
+    top: -10px; }
+  .pancake__lines::after {
+    top: 5px; }
+.pancake-open {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .pancake_lines {
-    display: block;
-    height: 5px;
-    width: 50px;
-    background-color: red; }
-    .pancake_lines::before {
-      content: "";
-      display: block;
-      position: relative;
-      height: 5px;
-      width: 50px;
-      background-color: red;
-      top: -10px; }
-    .pancake_lines::after {
-      content: "";
-      display: block;
-      position: relative;
-      height: 5px;
-      width: 50px;
-      background-color: red;
-      top: 5px; }
-  .pancake-open {
-    position: absolute;
-    right: 80px;
-    top: 80px;
-    height: 80px; }
+  right: 80px;
+  top: 80px;
+  height: 80px; }
 
 .nav {
   height: 100vh;
@@ -78,17 +58,81 @@ body {
   transition: 0.5s;
   display: flex;
   align-items: center;
-  transform: translate(0); }
-  .nav_wrapper {
+  transform: translate(-100%); }
+  .nav__wrapper {
     display: flex;
     flex-flow: column nowrap;
     margin: 0 auto;
     list-style: none; }
-  .nav_item {
+  .nav__item {
     margin: 60px 0;
     font-size: 80px;
     font-weight: bold; }
-  .nav_link {
+  .nav__link {
     color: #333; }
+
+.header {
+  width: 100%;
+  height: 150px; }
+  .header__title {
+    margin-top: 0; }
+
+.pancake, .intro__heading {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.header__title {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 40px;
+  padding-top: 20px; }
+
+.header__subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin: 40px 0; }
+
+.intro__heading {
+  text-align: center;
+  font-size: 15px;
+  color: #333; }
+
+.pancake__lines, .pancake__lines::before, .pancake__lines::after {
+  height: 5px;
+  width: 50px;
+  background-color: red; }
+
+.pancake__lines::before, .pancake__lines::after {
+  content: '';
+  display: block;
+  position: relative; }
+
+.intro {
+  margin: 40px auto;
+  width: 80%;
+  text-align: center; }
+  .intro__button {
+    height: 75px;
+    width: 150px;
+    display: inline-block;
+    border: solid 1px black; }
+  .intro__hr {
+    width: 100%;
+    border: solid 2px black;
+    display: block;
+    margin-top: -3px; }
+  .intro__copy-area {
+    margin: 10px auto;
+    width: 60%; }
+  .intro__copy-first {
+    display: none; }
+  .intro__copy-second {
+    display: none; }
+  .intro__copy-third {
+    display: none; }
 
 /*# sourceMappingURL=main.css.map */
